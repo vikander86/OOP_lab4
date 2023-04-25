@@ -51,4 +51,5 @@ b.Utilize good() or eof() functions to check the file stream status.
 
 Read strings from the file using getline() function : 
 a.Prepare a std::string variable to store the results.
-b.Use istream &getline(istream &is, string &str) or istream &getline(istream &is, string &str, char delim) to read lines.
+b.Use istream &getline(istream &is, string &str) or istream &getline(istream &is, string &str, char delim) 
+to read lines.

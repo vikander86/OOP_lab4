@@ -1,8 +1,8 @@
 #pragma once
 
 #include "wheel.h"
-#include <cmath>
 #include "vehicle.h"
+#include <cmath>
 
 class Car : virtual public Vehicle
 {
