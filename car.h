@@ -4,7 +4,7 @@
 #include <cmath>
 #include "vehicle.h"
 
-class Car : public Vehicle
+class Car : virtual public Vehicle
 {
 public:
     friend class Wheel;

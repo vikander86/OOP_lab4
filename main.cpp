@@ -8,6 +8,8 @@
 #include "pump.h"
 #include "wheel.h"
 #include "bike.h"
+#include "boat.h"
+#include "amphicar.h"
 
 int main(int argc, char const *argv[])
 {
@@ -17,5 +19,10 @@ int main(int argc, char const *argv[])
     bike->print();
     delete car;
     delete bike;
+
+    Vehicle *amphicar = new Amphicar();
+    amphicar->print();
+    delete amphicar;
+
     return 0;
 }
