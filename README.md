@@ -61,6 +61,12 @@ I then used if statements to create a vehicle object based on the string read fr
 
 By creating a function in a different header, I could improve the readability and overall structure of the code.
 
+I first used the vector variable:
+
+    std::vector<Vehicle*>
+
+Which does work, as it creates raw functions! THis is when i learned about unique_ptr and how powerfull this toolset is. Having raw pointers requires memory management, thus I had to delete every object in the vector to not have memory leaks. Using unique_ptr lets the compiler automaticly handle the this memory and delete it as soon as it goes out of scope.
+
 A problem that occured was when creating unique pointers and trying to add them to the vector. I used the following line:
 
     vehicleList.push_back(vehicle)
