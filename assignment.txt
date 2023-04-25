@@ -1,0 +1,54 @@
+OOP Lab-IV: Inheritance - Cars and Vehicles
+
+Exercise 1: New Project Setup
+
+Create an empty folder for the project and open it in VS Code.
+Create a main.cpp file with minimal C++ code:
+int main(int argc, char *argv[])
+{
+    return 0;
+}
+Configure build tasks in .vscode folder:
+a. Create a tasks.json file with content to build C++ projects using g++ compiler.
+b. Ensure the "-std=c++17" flag is included in the "args" section.
+Test the build process with the main.cpp file by running the G++ Build Active File task.
+
+
+Exercise 2: Vehicles
+
+Copy previously developed Vehicle, Car, and Bike classes into the new project.
+Implement inheritance according to Figure 1 UML diagram:
+a. Modify Car and Bike classes to inherit from Vehicle class.
+Define print functions for Vehicle, Car, and Bike classes to output their respective class names to the console (cout).
+
+
+Exercise 3: Understanding Code Behavior
+
+Create Vehicle objects using derived classes Car and Bike:
+Vehicle * v1 = new Car();
+Vehicle *v2 = new Bike();
+Use print function to output class names of created objects.
+Investigate the difference between static and dynamic function binding to understand the observed output.
+
+
+Exercise 4: Diamond Inheritance
+
+Create a Boat class inheriting from Vehicle class.
+Create an Amphicar class inheriting from both Boat and Car classes.
+Resolve ambiguity in diamond inheritance by using virtual inheritance or adjusting the class hierarchy.
+
+
+Exercise 5: Streams and Files
+
+Create a new text file containing a list of vehicle types (bike, amphicar, car).
+In the main program, open the file for reading:
+a. Include fstream and string headers.
+b. Use ifstream inFile("vehicles.txt");
+to open the file.
+Read each line from the file and instantiate objects accordingly : 
+a.Use a while loop to read the file until its end.
+b.Utilize good() or eof() functions to check the file stream status.
+
+Read strings from the file using getline() function : 
+a.Prepare a std::string variable to store the results.
+b.Use istream &getline(istream &is, string &str) or istream &getline(istream &is, string &str, char delim) to read lines.

@@ -2,6 +2,7 @@
 
 #include "wheel.h"
 #include <cmath>
+#include "vehicle.h"
 
 class Car : public Vehicle
 {
@@ -53,7 +54,7 @@ public:
         delete frwheel;
         delete rlwheel;
         delete rrwheel;
-        std::cout << "Deleting model: " << model << std::endl;
+        std::cout << "Car d-tor" << std::endl;
     }
 
     // assigment constructor
@@ -202,12 +203,7 @@ public:
 
     void print()
     {
-        std::cout << ":::CAR INFO:::" << std::endl
-                  << "Model: " << model << std::endl
-                  << "Weight: " << weight << std::endl
-                  << "Speed: " << liniarVelocity << std::endl
-                  << "Angle: " << angularVelocity << std::endl
-                  << "Wheel radius: " << flwheel->radius << std::endl;
+        std::cout << "I'm a car" << std::endl;
     }
 
     void printWheelInfo()
